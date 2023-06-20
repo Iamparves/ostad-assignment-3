@@ -78,13 +78,13 @@ b. Implement a JavaScript function that adds a CSS class named "highlight" to th
 
 ### 11. Create Element & Append Element:
 
-a. Create a webpage with an empty unordered list (<ul>).
-b. Implement a JavaScript function that dynamically creates five list items (<li>) with sequential numbers (1 to 5) and appends them to the unordered list.
+a. Create a webpage with an empty unordered list (`<ul>`).
+b. Implement a JavaScript function that dynamically creates five list items (`<li>`) with sequential numbers (1 to 5) and appends them to the unordered list.
 
 
 ### 12. DOM Change Attribute Value:
 
-a. Create a webpage with an image element (<img>) that has an initial source URL.
+a. Create a webpage with an image element (`<img>`) that has an initial source URL.
 b. Implement a JavaScript function that changes the source URL of the image element when a button is clicked. Use a different image URL of your choice.
 
 
