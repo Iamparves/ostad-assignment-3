@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>04. Window Object</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      body {
+        text-align: center;
+        margin: 30px;
+      }
+
+      button {
+        font-size: 16px;
+        padding: 12px 30px;
+        background: #6a52e3;
+        color: #fff;
+        font-weight: 500;
+        border: 0;
+        outline: 0;
+        display: inline-block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Open new window</button>
+    <script>
+      // a
+      const openWindow = (url, width, height) => {
+        window.open(url, "_blank", `width=${width}, height=${height}`);
+      };
+
+      // b
+      openWindow("https://www.example.com", 800, 600);
+
+      // If browser by default blocks popup when page loading, please use the button to open a new window
+      document.querySelector("button").addEventListener("click", () => {
+        openWindow("https://www.example.com", 800, 600);
+      });
+    </script>
+  </body>
+</html>

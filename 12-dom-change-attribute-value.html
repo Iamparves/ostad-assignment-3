@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>12. DOM Change Attribute Value</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 300px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      }
+
+      .img {
+        width: 100%;
+        height: 300px;
+      }
+
+      .button {
+        font-size: 16px;
+        border: 0;
+        outline: 0;
+        padding: 10px 25px;
+        border-radius: 50px;
+        display: inline-block;
+        font-weight: 500;
+        color: #fff;
+        background: #fe5c61;
+        cursor: pointer;
+        margin: 15px auto;
+        transition: 300ms ease;
+      }
+
+      .button:active {
+        letter-spacing: -1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="img/houtarou.jpg" alt="" class="img" />
+      <button class="button">Change Image</button>
+    </div>
+    <script>
+      const changeImage = () => {
+        document.querySelector(".img").src = "img/luffy.jpg";
+      };
+
+      document.querySelector(".button").addEventListener("click", changeImage);
+    </script>
+  </body>
+</html>

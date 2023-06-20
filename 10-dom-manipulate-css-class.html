@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10. DOM Manipulate CSS Class</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      div {
+        max-width: 220px;
+        margin: 30px auto;
+        text-align: center;
+        border: 1px solid #eee;
+        border-radius: 8px;
+        padding: 20px 10px;
+      }
+
+      p {
+        font-size: 20px;
+        margin-bottom: 20px;
+        padding: 5px 0;
+      }
+
+      button {
+        font-size: 16px;
+        border: 0;
+        outline: 0;
+        padding: 10px 25px;
+        border-radius: 10px;
+        display: inline-block;
+        font-weight: 500;
+        color: #fff;
+        background: #fe5c61;
+        cursor: pointer;
+      }
+
+      .highlight {
+        background: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>Try to highlight me</p>
+      <button>Highlight Text</button>
+    </div>
+
+    <script>
+      document.querySelector("button").addEventListener("click", () => {
+        document.querySelector("p").classList.add("highlight");
+      });
+    </script>
+  </body>
+</html>

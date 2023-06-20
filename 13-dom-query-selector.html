@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>13. DOM Query Selector</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      body {
+        padding: 30px;
+      }
+
+      p {
+        padding: 15px;
+        border-radius: 5px;
+        border: 1px solid #dedede;
+        width: 300px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="red">The sun sets in the west</p>
+    <p class="text">Time flies when you're having fun</p>
+    <p class="red">Actions speak louder than words</p>
+    <p id="sentence">The early bird catches the worm</p>
+    <p id="text">Life is like a box of chocolates</p>
+    <p class="red">Every cloud has a silver lining</p>
+    <p class="red">Knowledge is power</p>
+
+    <script>
+      const changeTextColor = () => {
+        [...document.querySelectorAll(".red")].forEach((p) => {
+          p.style.color = "red";
+        });
+      };
+
+      changeTextColor();
+    </script>
+  </body>
+</html>

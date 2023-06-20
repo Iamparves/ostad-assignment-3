@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>05. Navigator Object</title>
+  </head>
+  <body>
+    <script>
+      // a
+      const getBrowserInfo = () => {
+        return {
+          browserName: navigator.appName,
+          browserVersion: navigator.appVersion,
+        };
+      };
+
+      // b
+      const browserInfo = getBrowserInfo();
+      console.log(`Browser Name: ${browserInfo.browserName}`);
+      console.log(`Browser Version: ${browserInfo.browserVersion}`);
+    </script>
+  </body>
+</html>

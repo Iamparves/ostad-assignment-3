@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14. AJAX Get Request</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      const postData = async () => {
+        const url = "https://api.example.com/submit";
+        const payload = { name: "John Doe", email: "johndoe@example.com" };
+        try {
+          const res = await axios.post(url, payload);
+          console.log("Post request successfull");
+        } catch (err) {
+          console.error(err.message);
+        }
+      };
+
+      postData();
+    </script>
+  </body>
+</html>

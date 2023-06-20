@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14. AJAX Get Request</title>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+      const getData = async () => {
+        try {
+          const res = await axios.get("https://api.example.com/data");
+          console.log(res.data);
+        } catch (err) {
+          console.error(err.message);
+        }
+      };
+
+      getData();
+    </script>
+  </body>
+</html>
